@@ -1,0 +1,74 @@
+.dashboard {
+    display: grid;
+    place-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.cards {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    overflow: auto;
+    min-height: 400px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.cards::-webkit-scrollbar {
+    width: 6px;
+}
+
+.cards::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.cards::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.empty{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.empty h1{
+    position: absolute;
+    width: 210px;
+    text-align: center;
+    transform: rotate(-3deg);
+    font-family: 'Rock Salt', cursive;
+    color: black !important;
+}
+
+.empty img{
+    width: 300px;
+}
+
+.arrow{
+    position: absolute;
+    left: -80%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    animation: piscar 2s infinite;
+}
+
+.arrow h2{
+    width: 100px;
+    text-align: center;
+}
+
+@keyframes piscar {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
